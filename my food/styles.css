@@ -69,15 +69,15 @@ header{
 
     .cont1{
         margin-top: 2%;
-        margin-left: 13.5%;
-        width: 73%;
+        margin-left: 0%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .cont1 section{
-        width: 205px;
+        width: 200px;
         margin-left: 2%;
     }
 
@@ -87,15 +87,15 @@ header{
 
     .cont2{
         margin-top: 2%;
-        margin-left: 13.5%;
-        width: 73%;
+        margin-left: 0;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .cont2 div{
-        width: 205px;
+        width: 200px;
         margin-left: 2%;
     }
 
