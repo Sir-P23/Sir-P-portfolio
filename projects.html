@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-PROJECTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .projects{
+        padding: 120px 5% 0;
+    }
+
+    .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3%;
+    margin-top: 2rem;
+}
+
+    
+    .back-div{
+        position: relative;
+    }
+
+.back{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 136, 255, 0.5);
+}
+
+.back:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 136, 255, 0.8);
+}
+
+.back::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+    .back:hover::before{
+        left: 100%;
+    }
+
+    .contact{
+        position: relative;
+        margin-top: 250px;
+    }
+
+    @media(max-width:430px){
+        .projects{
+        padding: 100px 5% 300px;
+    }
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo">SIR-P <SPan>TECH</SPan></div>
+        <div class="nav-link" id="links">
+            <a href="" id="cancel">X</a>
+            <a href="index.html">Home</a>
+            <a href="#about" aria-label="about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button  onclick="displayF()" id="text"><i  class="fa fa-bars"></i></button>
+    </nav>
+
+    <script>
+        function displayF(){
+            document.getElementById("links").style.display ="block"
+        }
+
+        function cancelF(){
+            document.getElementById("links"). style.display ="none"
+        }
+
+        function moreF(){
+            document.getElementById("more").style.display ="block"
+        }
+    </script>
+
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="images/fb.png" alt="" height="200px" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Facebook Page</h2>
+                    <p class="project-description">A fully responsive facebook page built with html, css and Javascript, </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="facebook/"  class="project-link">
+                           <i class="fa fa-link"></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/gadget.png" alt=""  class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Gadget Website</h2>
+                    <p class="project-description">A fully responsive gadget website built with html, css and Javascript. features includes, differents types of gadgets available in stock, etc. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="a gadgets/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/portfolio.png" alt="" height="200px" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Portfolio Site</h2>
+                    <p class="project-description">A responsive portfolio site built with html, css and Javascript. Feature includes owners name and contact info. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="portfolio/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+            
+             
+            <!-- second row -->
+            <div class="project-card">
+                <img src="images/band.png" alt="" height="200px" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Band Website</h2>
+                    <p class="project-description">A responsive Band site built with html, css and Javascript. Feature includes upcoming events and dates, and band members contact info. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="band/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" >
+                <img src="images/food.png" alt="" height="200px" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Food Website</h2>
+                    <p class="project-description">An food/restaurant site built with html, css and Javascript. Feature includes different varieties of food available in the restaurant, about the chef. and lots more </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="my food/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/hotel1.png" alt="" height="200px" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Hotel Website</h2>
+                    <p class="project-description">A responsive hotel site built with html, css and Javascript. Feature includes available rooms, pricing and contact info. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="hotel/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-div"><a href="index.html" class="back">Back Home</a></div>
+        </div>
+        
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+
+        <form action="" class="contact-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-inout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="name" class="form-inout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="subject" id="name" class="form-inout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Message" class="form-label">Message</label>
+                <textarea id="message" class="form-textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61573044028452" class="social-link">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://x.com/peteruc35616610?s=21" class="social-link">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="http://Wa.me/2348060088906" class="social-link">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p class="copywright"> @ 2025 Sir-P Tech. All rights reserved</p>
+    </footer>
+
+</body>
+</html>

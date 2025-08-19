@@ -1,0 +1,270 @@
+header{
+        width: 100%;
+        height: 6%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 0 2%;
+        z-index: 3;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header a{
+        text-decoration: none;
+        color: #000;
+        font-size: large;
+    }
+
+    .fa-bars{
+        font-size: 22px;
+        border-color: azure;
+        margin-top: 0.5%;
+    }
+
+
+    #dropcontent a{
+        text-decoration: none;
+        color: #000;
+        margin-left: 15%;
+        padding: 2%;
+        display: block;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    header a:hover {
+        color: blue;
+        font-size: 30px;
+    }
+    #dropcontent a:hover{
+        color: blue;
+        font-size: 30px;
+    }
+    
+
+    #dropcontent{
+       display: none;
+       background-color: white;
+       position: fixed;
+       left: 0%;
+       height: 100%;
+       width: 30%;
+       top: 0;
+       background-color: white;
+       animation: forwards display 1s ease-out;
+    }
+
+    @keyframes display {
+        from{
+            width: 0%;
+        }
+    }
+    
+    p{
+        font-size: 83%;
+        color: #605d5d;
+    }
+
+    .cont1{
+        margin-top: 2%;
+        margin-left: 13.5%;
+        width: 73%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cont1 section{
+        width: 205px;
+        margin-left: 2%;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    .cont2{
+        margin-top: 2%;
+        margin-left: 13.5%;
+        width: 73%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cont2 div{
+        width: 205px;
+        margin-left: 2%;
+    }
+
+    div img{
+        width: 100%;
+    }
+
+    .section1{
+        margin-top: 2%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .section1 a{
+        text-decoration:none ;
+        color: black;
+    }
+    
+    .cont2  a:hover{
+        background-color: #000;
+        color: white;
+    }
+   
+    .cont3{
+        margin-top: 6%;
+        margin-left: 15.5%;
+        width: 70%;
+    }
+
+    .cont3 h3{
+        text-align: center; 
+    }
+
+    .cont3 .write{
+        position: relative;
+        text-align: center;
+    }
+   
+    footer{
+        margin-top: 6%;
+        margin-left: 13.5%;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer div{
+        width: 30%;
+        margin-left: 2%;
+        float: left;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .div2 img{
+        width: 20%;
+        height: 50px;
+    }
+
+    .div3 p{
+        float: left;
+        background-color: black;
+        color: white;
+        margin: 1%;
+        font-size: 13px;
+    }
+
+    @media(max-width: 768px){
+    .myfood{
+        display: flex;
+    }
+    
+    p{
+        font-size: 83%;
+        color: #605d5d;
+    }
+
+    .cont1{
+        margin-top: 4%;
+        margin-left: 13.5%;
+        width: 73%; 
+    }
+
+    .cont2{
+        margin-top: 2%;
+        margin-left: 13.5%;
+        width: 73%; 
+    }
+   
+    footer{
+        margin-top: 6%;
+        margin-left: 13.5%;
+        width: 70%;
+    }
+
+    .div3 p{
+        float: left;
+        background-color: black;
+        color: white;
+        margin: 1%;
+        font-size: 13px;
+    }
+    }
+
+    @media(max-width: 430px){
+    .fa-bars{
+        margin-left: 9%;
+        font-size: 22px;
+        margin-top: 0.5%;
+    }
+    
+    p{
+        font-size: 83%;
+        color: #605d5d;
+    }
+
+    .cont1{
+        margin-top: 4%;
+        margin-left: 5%;
+        width: 90%; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cont2{
+        margin-top: 4%;
+        margin-left: 5%;
+        width: 90%; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cont3{
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 90%;
+        text-align: center;
+    }
+   
+    footer{
+        margin-top: 6%;
+        margin-left: 5%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer div{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .div2 img{
+        width: 20%;
+        height: 50px;
+    }
+
+    .div3 p{
+        float: left;
+        background-color: black;
+        color: white;
+        margin: 1%;
+        font-size: 13px;
+    }
+
+    }

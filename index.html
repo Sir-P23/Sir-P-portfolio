@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETER UCHE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SIR-P <SPan>TECH</SPan></div>
+        <div class="nav-link" id="links">
+            <a href="" id="cancel">X</a>
+            <a href="">Home</a>
+            <a href="#about" aria-label="about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button  onclick="displayF()" id="text"><i  class="fa fa-bars"></i></button>
+    </nav>
+
+    <script>
+        function displayF(){
+            document.getElementById("links").style.display ="block"
+        }
+
+        function cancelF(){
+            document.getElementById("links"). style.display ="none"
+        }
+
+    </script>
+
+
+
+    <section class="hero" id="Home">
+        <div class="hero-content">
+            <h1>Hi👋 <br>I`m <span>Peter Uche</span><br>Web Developer</h1>
+            <p id="wrt1">I'm a passionate full-stack web developer 
+                with 6+ months of experience building robust, 
+                user-friendly websites. I specialize in creating
+                scalable front-end and back-end solutions using modern
+                technologies like and HTML, CSS JavaScript. My goal is to deliver 
+                high-quality code and exceptional user experiences
+            </p>
+
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-border" >
+                <img src="images/me2.jpg" alt="me2"  class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>My journey as a full-stack developer started back in <span>feb. 25th 2025,</span> 
+                    while on IT (Industrial Training) as a student at Federal Polytechnic, OKO for over two years.
+                </p>
+                <p>After contemplating for a while on what <span>digital skill</span> i should go for, I decided to try out
+                    the corporate world, and I started working towards learning
+                    full-stack web development at <span>Digital Dream ICT Academy, Enugu State.</span>
+                </p>
+                <p>After some exciting months of consistent learning at Digital Dream, I decided to give it
+                    my all,,because of the the <span>great passion and enthusiasm</span> i have developed for it so far.
+                </p>
+                <p>My success quickly compounded I started receiving job offers 
+                    from the <span>biggest names</span> in the industry.
+                </p>
+            </div>
+
+            <div class="skills">
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Javascript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="images/fb.png" alt="" height="200px" class="project-image">
+                <div class="project-info" id="layer">
+                    <h2 class="project-title">Facebook Page</h2>
+                    <p class="project-description">A fully responsive facebook page built with html, css and Javascript, </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="facebook/"  class="project-link">
+                           <i class="fa fa-link"></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/gadget.png" alt=""  class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Gadget Website</h2>
+                    <p class="project-description">A fully responsive gadget website built with html, css and Javascript. features includes, differents types of gadgets available in stock, etc. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="a gadgets/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/portfolio.png" alt="" height="200px" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Portfolio Site</h2>
+                    <p class="project-description">A responsive portfolio site built with html, css and Javascript. Feature includes owners name and contact info. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="portfolio/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/band.png" alt="" height="200px" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Band Website</h2>
+                    <p class="project-description">A responsive Band site built with html, css and Javascript. Feature includes upcoming events and dates, and band members contact info. </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="band/" class="project-link">
+                           <i class="fa fa-link" ></i> Live Demo
+                        </a>
+                        <a href="" class="project-link">
+                            <i class="fa-brands fa-github"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="see-div"><a href="projects.html" class="see">See More</a></div>
+        </div>
+        
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+
+        <form action="" class="contact-form">
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-inout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="name" class="form-inout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="subject" id="name" class="form-inout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Message" class="form-label">Message</label>
+                <textarea id="message" class="form-textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61573044028452" class="social-link">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://x.com/peteruc35616610?s=21" class="social-link">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="http://Wa.me/2348060088906" class="social-link">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p class="copywright"> @ 2025 Sir-P Tech. All rights reserved</p>
+    </footer>
+</body>
+</html>
