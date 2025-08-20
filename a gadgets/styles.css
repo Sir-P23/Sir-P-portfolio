@@ -232,7 +232,7 @@ header{
     }
 
     .product1{
-        width: 255px;
+        width: 250px;
         background-color: #5390d9;
         padding: 5px 5px;
         border-radius: 20px;
@@ -416,14 +416,14 @@ header{
     .top-div{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
         gap: 2%;
         padding: 2% 2.5% 2%;
         width: 100%;
     }
 
     .top-product{
-        width: 255px;
+        width: 250px;
         background-color: #5390d9;
         padding: 5px 5px;
         border-radius: 20px;
@@ -645,7 +645,7 @@ header{
 
     .more{
         margin-top: 1%;;
-        width: 260px;
+        width: 250px;
     }
 
     .more h4{
