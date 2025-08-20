@@ -17,9 +17,8 @@
     <header>
         
         <div class="logo"><b>SPG-HOME</b></div>
-
         <div class="login">
-            <a href="">Log in</a>
+            <a onclick="showF()">Log in</a> 
             <a href="">
                 <i class="fa-solid fa-user"></i>
             </a>
@@ -33,6 +32,25 @@
             </a>
         </div>
     </header>
+
+    <div id="login-page">
+        <a href="" onclick="cancel1F()" class="cancel-login">X</a>
+        <form action="" method="" class="login-form">
+            <h2>Login</h2>
+            <label for="name">Username</label><br>
+            <input type="name" placeholder="enter your username"><br><br>
+            <label for="Password">Password</label><br>
+            <input type="password" placeholder="enter your password"><br><br>
+
+            <input type="submit" name="Login" style="background-color: rgb(22, 87, 192);"><br><br>
+        </form>
+
+        <div class="others">
+            <a href="">Forgotten password?</a>
+
+            <a href="">Sign-Up</a>
+        </div>
+    </div>
 
     <div class="div">
         <div onclick="displayF()" class="button"><i class="fa fa-bars"></i></div>
@@ -61,6 +79,14 @@
 
         function cancelF(){
             document.getElementById("drop").style . display = "none"
+        }
+
+        function showF(){
+            document.getElementById("login-page").style . display = "block"
+        }
+
+        function cancel2F(){
+            document.getElementById("login-page").style . display = "none"
         }
     </script>
    

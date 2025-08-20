@@ -47,6 +47,57 @@ header{
         font-size: 25px;
     }
 
+    #login-page{
+        color: white;
+        padding: 0% 2% 2%;
+        width: 30%;
+        border-radius: 25px;
+        display: none;
+        position: fixed;
+        margin-left: 65%;
+        z-index: 5;
+        background: linear-gradient(to right, #26A69A, #AB47BC);
+    }
+
+    .cancel-login{
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        font-family: sans-serif;
+        position: relative;
+        margin-left: 90%;
+        font-weight: 900;
+        top: 20px;
+    }
+
+    #login-page h2{
+        text-align: center;
+    }
+
+    #login-page form{
+        font-size: 20px;
+    }
+
+    .login-form input{
+        height: 30px;
+        width: 98%;
+        border-radius: 22px;
+        border: 2px solid rgb(0, 98, 255);
+    }
+
+    .others{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .others a{
+        text-decoration: none;
+        background-color: #053979;
+        border-radius: 20px;
+        padding: 2% 3%;
+        color: white;
+    }
+
      .div{
         background-color: white;
         margin-top: 1%;
@@ -698,6 +749,11 @@ header{
         margin-top: 1%;
     }
 
+    #login-page{
+        width: 70%;
+        margin-left: 15%;
+    }
+
     .div1 h1{
         font-size: 45px;
     }
@@ -821,6 +877,11 @@ header{
 
     .login a{
         font-size: 18px;
+    }
+
+    #login-page{
+        width: 80%;
+        margin-left: 5%;
     }
 
     .div1 h1{
