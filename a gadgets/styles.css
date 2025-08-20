@@ -232,7 +232,7 @@ header{
     }
 
     .product1{
-        width: 265px;
+        width: 255px;
         background-color: #5390d9;
         padding: 5px 5px;
         border-radius: 20px;
@@ -419,15 +419,16 @@ header{
         justify-content: center;
         gap: 2%;
         padding: 2% 2.5% 2%;
+        width: 100%;
     }
 
     .top-product{
-        width: 265px;
+        width: 255px;
         background-color: #5390d9;
         padding: 5px 5px;
         border-radius: 20px;
         margin-top: 20px;
-    }
+    } 
 
     .top-product img{
         width: 100%;
@@ -880,7 +881,7 @@ header{
 
     .div3a, .div3b{
         width: 90%;
-        height: 240px;
+        height: 280px;
     }
 
     .more{
