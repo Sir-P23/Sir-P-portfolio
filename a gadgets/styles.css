@@ -227,7 +227,7 @@ header{
         flex-wrap: wrap;
         justify-content: center;
         gap: 2%;
-        padding: 2% 2.5% 2%;
+        padding: 2% 1% 2%;
         width: 100%;
     }
 
@@ -639,7 +639,7 @@ header{
         width: 94%;
         display: flex;
         flex-wrap: wrap;
-        gap: 3%;
+        gap: 2%;
         margin-left: 3%;
     }
 
@@ -766,6 +766,9 @@ header{
         width: 45%;
     }
 
+    .top-product, .product1{
+        width: 45%;
+    }
     .cont2 button{
         margin-left: 50%;
         margin-top: 40%;
@@ -792,6 +795,10 @@ header{
         color: white;
         font: bolder;
         font-size: 23px;
+    }
+
+    .more{
+        width: 23%;
     }
     }
 
@@ -842,7 +849,7 @@ header{
     }
 
     .mobile, .drones, .speaker, .computer, .tablets, .tv{
-        width: 280px;
+        width: 87%;
     }
 
     .view-div{
@@ -870,6 +877,10 @@ header{
         width: 80%;
         padding: 0 2% 0;
         margin-left: 5%;
+    }
+
+    .top-product, .product1{
+        width: 90%;
     }
 
     .comment{
