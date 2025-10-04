@@ -35,8 +35,8 @@
 
     <section class="hero" id="Home">
         <div class="hero-content">
-            <h1>Hi👋 <br>I`m <span>Peter Uche</span><br>Web Developer</h1>
-            <p id="wrt1">I'm a passionate full-stack web developer 
+            <h1 class="hidden slide-left">Hi👋 <br>I`m <span>Peter Uche</span><br>Web Developer</h1>
+            <p id="wrt1" class="hidden slide-left">I'm a passionate full-stack web developer 
                 with 6+ months of experience building robust, 
                 user-friendly websites. I specialize in creating
                 scalable front-end and back-end solutions using modern
@@ -44,21 +44,21 @@
                 high-quality code and exceptional user experiences
             </p>
 
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <a href="#contact" class="cta-button hidden slide-left">Get In Touch</a>
         </div>
 
         <div class="profile-container">
-            <div class="profile-border" >
-                <img src="images/me2.jpg" alt="me2"  class="profile-pic">
+            <div class="profile-border " >
+                <img src="images/me2.jpg" alt="me2"  class="profile-pic hidden slide-right">
             </div>
         </div>
     </section>
 
 
     <section class="about" id="about">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title hidden slide-left">About Me</h2>
         <div class="about-content">
-            <div class="about-text">
+            <div class="about-text hidden slide-left">
                 <p>My journey as a full-stack developer started back in <span>feb. 25th 2025,</span> 
                     while on IT (Industrial Training) as a student at Federal Polytechnic, OKO for over two years.
                 </p>
@@ -74,7 +74,7 @@
                 </p>
             </div>
 
-            <div class="skills">
+            <div class="skills hidden slide-right">
                 <div class="skill-item">
                     <div class="skill-name">
                         <span>HTML</span>
@@ -107,7 +107,7 @@
 
                 <div class="skill-item">
                     <div class="skill-name">
-                        <span>React</span>
+                        <span>PHP</span>
                         <span>70%</span>
                     </div>
                     <div class="skill-bar">
@@ -120,8 +120,8 @@
 
 
     <section class="projects" id="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
+        <h2 class="section-title hidden slide-top">My Projects</h2>
+        <div class="projects-grid hidden slide-bottom">
 
             <div class="project-card">
                 <img src="images/fb.png" alt="" height="200px" class="project-image">
@@ -205,15 +205,15 @@
                     </div>
                 </div>
             </div>
-            <div class="see-div"><a href="projects.html" class="see">See More</a></div>
+            <div class="see-div hidden slide-left"><a href="projects.html" class="see">See More</a></div>
         </div>
         
     </section>
     
     <section class="contact" id="contact">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title hidden slide-left">Get In Touch</h2>
 
-        <form action="" class="contact-form">
+        <form action="" class="contact-form hidden slide-bottom">
             <div class="form-group">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" id="name" class="form-inout" required>
@@ -256,5 +256,7 @@
 
         <p class="copywright"> &copyright 2025 Sir-P Tech. All rights reserved</p>
     </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
