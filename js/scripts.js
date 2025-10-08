@@ -14,3 +14,10 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe each element
 hiddenElements.forEach(el => observer.observe(el));
+
+
+
+
+
+
+

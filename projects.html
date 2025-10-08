@@ -17,11 +17,12 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 3%;
     margin-top: 2rem;
+    margin-bottom: 50px;
 }
 
     
     .back-div{
-        position: relative;
+        text-align: center;
     }
 
 .back{
@@ -102,17 +103,17 @@
         <div class="projects-grid">
 
             <div class="project-card">
-                <img src="images/fb.png" alt="" height="200px" class="project-image">
+                <img src="images/arc.png" alt="" height="200px" class="project-image">
                 <div class="project-info">
-                    <h2 class="project-title">Facebook Page</h2>
-                    <p class="project-description">A fully responsive facebook page built with html, css and Javascript, </p>
+                    <h2 class="project-title">Architecture Website</h2>
+                    <p class="project-description">A fully responsive Arch website built with html, css and Javascript, </p>
                     <div class="project-tech">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
                         <span class="tech-tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="facebook/"  class="project-link">
+                        <a href="architect/"  class="project-link">
                            <i class="fa fa-link"></i> Live Demo
                         </a>
                         <a href="" class="project-link">
@@ -135,7 +136,7 @@
                         <a href="a gadgets/" class="project-link">
                            <i class="fa fa-link" ></i> Live Demo
                         </a>
-                        <a href="" class="project-link">
+                        <a href="https://github.com/Sir-P23/gadget" class="project-link">
                             <i class="fa-brands fa-github"></i>Code
                         </a>
                     </div>
@@ -157,7 +158,7 @@
                         <a href="portfolio/" class="project-link">
                            <i class="fa fa-link" ></i> Live Demo
                         </a>
-                        <a href="" class="project-link">
+                        <a href="https://github.com/Sir-P23/client-portfolio" class="project-link">
                             <i class="fa-brands fa-github"></i>Code</a>
                     </div>
                 </div>
@@ -179,27 +180,27 @@
                         <a href="band/" class="project-link">
                            <i class="fa fa-link" ></i> Live Demo
                         </a>
-                        <a href="" class="project-link">
+                        <a href="https://github.com/Sir-P23/band" class="project-link">
                             <i class="fa-brands fa-github"></i>Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" >
-                <img src="images/food.png" alt="" height="200px" class="project-image">
+                <img src="images/invest.jpg" alt="" height="200px" class="project-image">
                 <div class="project-info">
-                    <h2 class="project-title">Food Website</h2>
-                    <p class="project-description">An food/restaurant site built with html, css and Javascript. Feature includes different varieties of food available in the restaurant, about the chef. and lots more </p>
+                    <h2 class="project-title">Investment Website</h2>
+                    <p class="project-description">An Investment site built with html, css and Javascript. Feature includes different investment plans, about the company. and lots more </p>
                     <div class="project-tech">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
                         <span class="tech-tag">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="my food/" class="project-link">
+                        <a href="apexium/" class="project-link">
                            <i class="fa fa-link" ></i> Live Demo
                         </a>
-                        <a href="" class="project-link">
+                        <a href="https://github.com/Sir-P23/investment" class="project-link">
                             <i class="fa-brands fa-github"></i>Code</a>
                     </div>
                 </div>
@@ -219,44 +220,62 @@
                         <a href="hotel/" class="project-link">
                            <i class="fa fa-link" ></i> Live Demo
                         </a>
-                        <a href="" class="project-link">
+                        <a href="https://github.com/Sir-P23/hotel" class="project-link">
                             <i class="fa-brands fa-github"></i>Code</a>
                     </div>
                 </div>
             </div>
-
-            <div class="back-div"><a href="index.html" class="back">Back Home</a></div>
         </div>
-        
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-
-        <form action="" class="contact-form">
-            <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" class="form-inout" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="name" class="form-inout" required>
-            </div>
-
-            <div class="form-group">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="subject" id="name" class="form-inout" required>
-            </div>
-
-            <div class="form-group">
-                <label for="Message" class="form-label">Message</label>
-                <textarea id="message" class="form-textarea" required></textarea>
-            </div>
-
-            <button type="submit" class="submit-button">Send Message</button>
+        <h2 class="section-title hidden slide-left">Get In Touch</h2>
+        <form class="contact-form" action="https://formspree.io/f/xanpdoje" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="status"></p>
         </form>
     </section>
+
+   <script>
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("status");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+      };
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          status.textContent = "✅ Message sent successfully!";
+          status.className = "success";
+          form.reset();
+        } else {
+          status.textContent = "❌ Failed to send message.";
+          status.className = "error";
+        }
+      } catch (error) {
+        status.textContent = "⚠️ Network error, please try again.";
+        status.className = "error";
+      }
+    });
+   </script>
 
     <footer>
         <div class="social-links">
@@ -273,8 +292,8 @@
             </a>
         </div>
 
-        <p class="copywright"> @ 2025 Sir-P Tech. All rights reserved</p>
+        <p class="copywright"> &copyright 2025 Sir-P Tech. All rights reserved</p>
     </footer>
-
+<script src="js/scripts.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
             <a href="" id="cancel">X</a>
             <a href="">Home</a>
             <a href="#about" aria-label="about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="projects.html">Projects</a>
             <a href="#contact">Contact</a>
         </div>
         <button  onclick="displayF()" id="text"><i  class="fa fa-bars"></i></button>
@@ -121,7 +121,7 @@
 
     <section class="projects" id="projects">
         <h2 class="section-title hidden slide-top">My Projects</h2>
-        <div class="projects-grid hidden slide-bottom">
+        <div class="projects-grid">
 
             <div class="project-card">
                 <img src="images/fb.png" alt="" height="200px" class="project-image">
@@ -205,39 +205,59 @@
                     </div>
                 </div>
             </div>
-            <div class="see-div hidden slide-left"><a href="projects.html" class="see">See More</a></div>
+            
         </div>
-        
+        <div class="see-div hidden slide-left"><a href="projects.html" class="see">See More</a></div>
     </section>
     
     <section class="contact" id="contact">
         <h2 class="section-title hidden slide-left">Get In Touch</h2>
-
-        <form action="" class="contact-form hidden slide-bottom">
-            <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" class="form-inout" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="name" class="form-inout" required>
-            </div>
-
-            <div class="form-group">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="subject" id="name" class="form-inout" required>
-            </div>
-
-            <div class="form-group">
-                <label for="Message" class="form-label">Message</label>
-                <textarea id="message" class="form-textarea" required></textarea>
-            </div>
-
-            <button type="submit" class="submit-button">Send Message</button>
+        <form class="contact-form" action="https://formspree.io/f/xanpdoje" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="status"></p>
         </form>
     </section>
 
+   <script>
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("status");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+      };
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          status.textContent = "✅ Message sent successfully!";
+          status.className = "success";
+          form.reset();
+        } else {
+          status.textContent = "❌ Failed to send message.";
+          status.className = "error";
+        }
+      } catch (error) {
+        status.textContent = "⚠️ Network error, please try again.";
+        status.className = "error";
+      }
+    });
+   </script>
 
     <footer>
         <div class="social-links">
