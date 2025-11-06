@@ -335,8 +335,12 @@ nav{
     border-radius: 10px;
 }
 
-.project-image:hover{
-    transform: scale(0.97);
+
+.project-card:hover .project-image{
+    transform: scale(1.03);
+    border-radius: 10px;
+    filter: brightness(0.5);
+   
 }
 
 .project-info{
