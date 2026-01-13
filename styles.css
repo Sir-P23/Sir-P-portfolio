@@ -112,7 +112,9 @@ nav{
     width: 100%;
 }
 
-
+.see-resume{
+  display: none;
+}
 
 /* hero */
 .hero{
@@ -271,6 +273,22 @@ nav{
     line-height: 1.6;
     color: #ccc;
 }
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--neon-blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #0056b3;
+}
+
 
 .skills{
     flex: 1;
@@ -594,6 +612,10 @@ footer{
     to{
         width: 50%;
     }
+}
+
+.see-resume{
+  display: block;
 }
 
 .nav-link a{
