@@ -555,12 +555,12 @@ footer {
 }
 
 .nav-link a{
-    margin-top: 6%;
+    margin-top: 7.5%;
     display: block;
     color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: relative;
 }
 .nav-link a:hover{
