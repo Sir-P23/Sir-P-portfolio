@@ -544,7 +544,7 @@ footer {
     display: none;
     position: fixed;
     width: 50%;
-    background-color: var(--dark-bg);
+    background-color: var(--bg-color);
     height: 100vh; 
     right:  0;
     transition: 0.3s ease-in-out;
@@ -589,7 +589,7 @@ footer {
     display: block;
     font-size: 30px;
     font-weight:600;
-    color: #ffffff;
+    color: var(--text-color);
     cursor: pointer;
 }
 
