@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PETER UCHE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 </head>
 <body>
@@ -19,8 +19,13 @@
             <a href="#contact">Contact</a>
             <a href="images/resume.pdf"  class="see-resume">My Resume</a>
         </div>
+
         <button  onclick="displayF()" id="text"><i  class="fa fa-bars"></i></button>
       </header>
+
+      <button id="theme-toggle" aria-label="Toggle theme">light-theme</button>
+      
+
 
     <script>
         function displayF(){
@@ -221,8 +226,8 @@
         <div class="see-div hidden slide-left"><a href="projects.html" class="see">See More</a></div>
     </section>
     
-    <section class="contact" id="contact">
-        <h2 class="section-title hidden slide-left">Get In Touch</h2>
+    <section class="contact hidden slide-top" id="contact">
+        <h2 class="section-title ">Get In Touch</h2>
         <form class="contact-form" action="https://formspree.io/f/xanpdoje" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -288,10 +293,31 @@
         <p class="copywright"> &copyright 2025 Sir-P Tech. All rights reserved</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 
-    <script>
+<script>
+const toggleBtn = document.getElementById("theme-toggle");
 
-    </script>
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-theme");
+  toggleBtn.textContent = "dark-theme";
+}
+
+// Toggle theme
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-theme");
+
+  if (document.body.classList.contains("light-theme")) {
+    localStorage.setItem("theme", "light");
+    toggleBtn.textContent = "dark-theme";
+  } else {
+    localStorage.setItem("theme", "dark");
+    toggleBtn.textContent = "light-theme";
+  }
+});
+</script>
+
+
 </body>
 </html>
